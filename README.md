@@ -1,7 +1,9 @@
+# Resources
+---
+- [Sorting Algorithms Visualized](https://www.toptal.com/developers/sorting-algorithms)
+
 # Data Structures & Algorithms (With JavaScript Examples)
 ---
-
-
 
 ## Sorting Algorithms
 ---

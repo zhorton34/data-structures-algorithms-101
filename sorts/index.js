@@ -1,9 +1,12 @@
 const sorts = {	
+	radix: require('./radix.js').RadixSort,
+	shell: require('./shell.js').ShellSort,
 	merge: require('./merge.js').MergeSort,
 	quick: require('./quick.js').QuickSort,
 	bubble: require('./bubble.js').BubbleSort,
 	insert: require('./insert.js').InsertionSort,
 	select: require('./select.js').SelectionSort,
+	counting: require('./counting.js').CountingSort,
 }
 
 module.exports = {
