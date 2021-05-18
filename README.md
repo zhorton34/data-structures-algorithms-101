@@ -42,7 +42,25 @@ const BubbleSort = (items = []) => {
   return items
 }
 
-const InsertionSort = (items = []) => {
+
+
+console.log('Bubble Sort: ', sorts.bubble(Factory.DummyArray(100, 1000)))
+
+/*----------------------------------------------------------
+ |   Insertion Sort
+ *----------------------------------------------------------
+ |
+ |   Time Complexity 
+ |      . Best: O(n)
+ |      . Aver: O(n^2)
+ |      . Worst: O(n^2) 
+ | 
+ |   Space Complexity
+ |      . O(1)
+ |
+ */
+
+ const InsertionSort = (items = []) => {
     for (let i = 1; i < items.length; i++)
     {
       let index = i-1
@@ -61,22 +79,6 @@ const InsertionSort = (items = []) => {
     return items
 }
 
-
-console.log('Bubble Sort: ', sorts.bubble(Factory.DummyArray(100, 1000)))
-
-/*----------------------------------------------------------
- |   Insertion Sort
- *----------------------------------------------------------
- |
- |   Time Complexity 
- |      . Best: O(n)
- |      . Aver: O(n^2)
- |      . Worst: O(n^2) 
- | 
- |   Space Complexity
- |      . O(1)
- |
- */
 console.log('Insertion Sort: ', sorts.insert(Factory.DummyArray(100, 1000)))
 
  /*----------------------------------------------------------
