@@ -193,3 +193,73 @@ const MergeSort = (items = []) => {
 
 console.log('Merge Sort: ', sorts.merge(Factory.DummyArray(100, 1000)))
 ```
+
+
+
+## Search Algorithms
+- Linear Search
+- Binary Search
+
+
+```js
+/*----------------------------------------------------------
+ |   Binary Search
+ *----------------------------------------------------------
+ |
+ |   Time Complexity 
+ |      . Best: O(1)
+ |      . Aver: O(log n)
+ |      . Worst: O(log n) 
+ | 
+ |   Space Complexity
+ |      . O(1)
+ |   Notes
+ |      . Array Must be sorted for binary search to work
+ |      . Binary Search is Uber Fast O(log n) is the fastest outside of Constant Time Complexity
+ |
+ */
+
+const BinarySearch = (sorted = [], key) => {
+	let lo = 0
+	let hi = sorted.length - 1
+
+	while (lo <= hi)
+	{
+		let mid = Math.floor((lo + hi) / 2)
+
+		if (key === sorted[mid]) return mid
+		else if (key < sorted[mid]) hi = mid - 1
+		else if (key > sorted[mid]) lo = mid + 1
+	} 
+
+	return - 1
+}
+
+
+
+/*----------------------------------------------------------
+ |   Linear Search
+ *----------------------------------------------------------
+ |
+ |   Time Complexity 
+ |      . Best: O(1)
+ |      . Aver: O(n)
+ |      . Worst: O(n) 
+ | 
+ |   Space Complexity
+ |      . O(1)
+ |
+ |   Notes
+ |      . Unlike Binary Search, Linear doesn't require sorted array
+ |      . Much, much, much slower than binary search on large lists of items
+ |
+ */
+
+ const LinearSearch = (items = [], key) => {
+ 	for (let i = 0; i < items.length; i++) {
+ 		if (items[i] === key) return i
+ 	}
+
+ 	return -1
+ }
+```
