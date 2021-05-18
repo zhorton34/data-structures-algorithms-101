@@ -1,3 +1,8 @@
+# Data Structures & Algorithms (With JavaScript Examples)
+---
+
+
+
 ## Sorting Algorithms
 ---
 - merge sort
@@ -7,7 +12,25 @@
 - selection sort
 
 
+## Search Algorithms
+---
+- Linear Search
+- Binary Search
+
+
+## Data Structures
+---
+- Arrays (Todo)
+- Hash Tables (Todo)
+- Queues (Todo)
+- Stacks (Todo)
+- Priority Queues (Todo)
+- Binary Trees (Todo)
+- Binary Heaps (Todo)
+- Adjacency Graph (Todo)
+
 ### Bubble
+---
 ```js
 const { Factory } = require('./factory.js')
 const { sorts } = require('./sorts/index.js')
@@ -197,6 +220,7 @@ console.log('Merge Sort: ', sorts.merge(Factory.DummyArray(100, 1000)))
 
 
 ## Search Algorithms
+---
 - Linear Search
 - Binary Search
 
