@@ -1,6 +1,13 @@
 ## Sorting Algorithms
 ---
+- merge sort
+- quick sort
+- bubble sort
+- insertion sort
+- selection sort
 
+
+### Bubble
 ```js
 const { Factory } = require('./factory.js')
 const { sorts } = require('./sorts/index.js')
@@ -85,7 +92,7 @@ console.log('Insertion Sort: ', sorts.insert(Factory.DummyArray(100, 1000)))
  |      . O(1)
  |
  */
- 
+
 const SelectionSort = (items = []) => {
   for (let passes = 0; passes < items.length; passes++)
   {
