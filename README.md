@@ -2,35 +2,50 @@
 ---
 - [Big O Cheat Sheet](https://www.bigocheatsheet.com/)
 - [Sorting Algorithms Visualized](https://www.toptal.com/developers/sorting-algorithms)
+- [Graphs Data Structure Breakdown](https://adrianmejia.com/data-structures-for-beginners-graphs-time-complexity-tutorial/)
 
 #### Data Structures & Algorithms (With JavaScript Examples)
 ---
 
 #### Sorting Algorithms
 ---
-- merge sort
-- quick sort
-- bubble sort
-- insertion sort
-- selection sort
+- [Merge sort](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/sorts/merge.js) 
+- [Quick sort](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/sorts/quick.js)
+- [Bubble sort](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/sorts/bubble.js)
+- [Insertion sort](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/sorts/insert.js)
+- [Selection sort](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/sorts/select.js)
+- [Radix sort](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/sorts/radix.js)
+- [Shell sort](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/sorts/shell.js)
+- [Counting sort](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/sorts/counting.js)
+ 
 
-
-#### Search Algorithms
+#### Searching Algorithms
 ---
-- Linear Search
-- Binary Search
+- [Linear search](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/searches/linear.js)
+- [Binary search](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/searches/binary.js)
+- [Depth first search (DFS)](https://google.com?q=depthfirstsearch)
+- [Breadth first search (BFS)](https://www.tutorialspoint.com/Breadth-first-search-traversal-in-Javascript)
 
+
+#### Other Alogirthms
+---
+- [Dijkstra's Algorithm](https://google.com?q=dijkstrasalgorithm)
+- [Topological Sort & Shortest-path in a DAG](TODO)
+- [Bellman-Ford](TODO)
+- [A-star A* Algorithm](TODO)
+- [Floyd-Warshall](TODO)
 
 #### Data Structures
 ---
-- Arrays (Todo)
-- Hash Tables (Todo)
-- Queues (Todo)
-- Stacks (Todo)
-- Priority Queues (Todo)
-- Binary Trees (Todo)
-- Binary Heaps (Todo)
-- Adjacency Graph (Todo)
+- [Array](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/array.js)
+- [Hash Tables](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/hash-table.js)
+- [Queue](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/queue.js)
+- [Stack](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/stack.js) 
+- [Binary Search Trees](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/binary-search-tree.js)
+- [Binary Heaps](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/binary-heap.js)
+- [Priority Queues](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/priority-queue.js) 
+- [Adjacency Graph](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/adjaceny-graph.js)
+
 
 ##### Bubble
 ---
