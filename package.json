@@ -1,0 +1,73 @@
+{
+  "name": "data-structures-algorithms-101",
+  "version": "1.0.0",
+  "description": "Data Structures & Algorithms in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "all": "npm run build && npm test",
+    "pretest": "npm run transpile",
+    "test": "mocha test/tests.js",
+    "transpile": "babel src --quiet --out-dir dist",
+    "readme": "node bundler/bundle.js",
+    "bundle": "webpack-cli dist/index.js --output build/vuejs-form.js --mode development --output-library form",
+    "uglify": "uglifyjs build/vuejs-form.js --compress --mangle --output build/vuejs-form.min.js",
+    "build": "npm run transpile && npm run bundle && npm run uglify && npm run readme",
+    "coverage": "npm run transpile && nyc mocha test/tests.js",
+    "reporter": "nyc report --reporter=html",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "prepublishOnly": "npm run all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhorton34/data-structures-algorithms-101.git"
+  },
+  "keywords": [
+    "js",
+    "data",
+    "structures",
+    "algorithms",
+    "linked",
+    "lists",
+    "binary",
+    "trees",
+    "quick",
+    "sort",
+    "merge",
+    "sort",
+    "graphs",
+    "min",
+    "heap",
+    "queues",
+    "max",
+    "heaps",
+    "stacks",
+    "sorts",
+    "binary",
+    "search"
+  ],
+  "author": "zhorton999@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhorton34/data-structures-algorithms-101/issues"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "homepage": "https://github.com/zhorton34/data-structures-algorithms-101#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.9.6",
+    "benchmark": "^2.1.0",
+    "chai": "^4.1.2",
+    "hoax.js": "^1.0.0",
+    "mocha": "^3.5.2",
+    "nyc": "^11.0.2",
+    "uglify-js": "^3.2.2",
+    "laravel-mix": "^6.0.19"
+  }
+}
