@@ -17,57 +17,62 @@
 ### Adjacency Graph
 --
 
-- [Adjacency Graph](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/adjaceny-graph.js)
+- [Adjacency Graph](src/structures/AdjacencyGraph)
 
 
 
 ### Array
 --
 
-- [Array](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/array.js)
+- [Array](src/structures/Array)
+
 
 
 ### Binary Heaps
 --
 
-- [Binary Heaps](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/binary-heap.js)
+- [Binary Heaps](src/structures/BinaryHeap)
+
 
 
 ### Binary Search Tree
 --
 
-- [Binary Search Trees](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/binary-search-tree.js)
+- [Binary Search Trees](src/structures/BinarySearchTree)
+
 
 
 ### Hash Table
 --
 
-- [Hash Tables](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/hash-table.js)
+- [Hash Tables](src/structures/HashTable)
+
 
 
 ### Priority Queue
 --
 
-- [Priority Queues](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/
-priority-queue.js) 
+- [Priority Queue](src/structures/PriorityQueue)
 
 
 ### Queue
 --
 
-- [Queue](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/queue.js)
+- [Queue](src/structures/Queue)
+
 
 
 ### Singley Linked List
 --
 
-- [Singley Linked List](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/src/structures/LinkedList.js)
+- [Singley Linked List](src/structures/LinkedList)
+
 
 
 ### Stack
 --
 
-- [Stack](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/stack.js) 
+- [Stack](src/structures/Stack)
 
 
 - [binary](#binary)
