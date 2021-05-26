@@ -1,0 +1,91 @@
+[How to: Prepare for a Google Engineering Interview](https://www.youtube.com/watch?v=ko-KkSmp-Lk)
+--
+
+### Tips
+- Make sure you're ready to prove what's on your resume
+- Data structures & algorithms
+  - Hash Tables
+  - Stacks
+  - Arrays
+  - Space & Time Complexity
+  - Be prepared to code on a white board (different than on a computer)
+  - Make sure you're brushed up on system design and object oriented design
+- In general, you want to show your problem solving skills to the question you are asked
+  - Coding question? Efficient code in short time
+  - Design question? Work with your interviewer to create a higher level system
+  - General analysis question? Show you understand all aspects of the problem
+  - In the end, an interviewer wants to know they'd be comfortable working with you
+- Specifically you should focus your preparation on the following areas
+  - You'll spend the majority of your time writing code in your interviews
+    - Be familiar with at least one coding language
+    - Expected to know 
+    	- Apis
+    	- Object Oriented Design
+    	- How to test your code 
+    	- And how to come up with corner cases and edge cases for yours and other peoples code 
+  - Another big thing is Algorithms (It's important)
+    - You want to know how complex your algorithm is
+      - Time and space complexity
+      - If you give an O(n) algorithm and then say it's better than that's a bit awk
+    - If you have a chance to study up on Other Algorithms like Dijkstra's and A-star
+      - It'll probably help you too
+  - Canidates with 3 or more years of industry experience should have hands on testing experience
+    - How would you unit test the code you write?
+    - What interesting inputs or test cases can you think of?
+    - May be asked to design end-to-end integration, load and performance, or even security tests for real world systems such as g-mail for example  
+  - Data Structures
+    - Should study up on as many data structures and algorithms as humanly possible
+    - You should know some of the most famous classes of np-complete problems
+      - Traveling sales man
+      - Knap sack
+      - should be able to recognize these famous questions when asked in slightly different ways
+    - Also try to figure out what np-complete actually means 
+    - Trees
+    - Some basic trees construction 
+    - Traversal and manipulation algorithms
+    - Hash tables
+    - Stacks
+    - Arrays
+    - etc...
+  - Math
+    - Will be very relevant
+    - Counting problems, basic probability
+    - Should be familiar with n-choose k problems
+  - Recursion
+    - Practice problems that can be solved iteratively, but are more eloquently solved recursively
+  - Operating Systems
+    - Processes
+    - Threads
+    - Concurrency Issues
+    - Semaphores
+    - Mutexes
+    - Locks
+    - Resource Allocation
+      - What resource a process or thread might need
+    - Context switching
+      - Brush up on that, understand it's initiated in the operating system and underlining hardware
+    - Understand a bit about how scheduling works
+  - System Design
+    - Canidates who have been in the industry more than 5 years should have experience with system design
+    - These questions are used to combine your knowledge, theory, and judgement to solve real world problems
+      - Sample Topics:
+        - Features sets
+        - Interfaces
+        - Class hierarchies
+        - Distributed systems
+        - Designing system under certain constraints
+      - Have a familiarity with how the internet works
+        - DNS 
+        - Fire wall
+  - Talk through your thought process
+    - Better to talk through your thought process than to stay silent
+  - Ask questions to clarify the challenge
+    - Google interview questions are intentionally vague
+    - Google wants you to keep thinking
+    - Think about your current solution and how you could improve it
+  - Practice
+    - Find problems
+    - Write code
+    - Solve problems
+
+
