@@ -1,5 +1,5 @@
-#### Sorting Algorithms
----
+### Sorting Algorithms
+--
 - [Merge sort](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/sorts/merge.js) 
 - [Quick sort](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/sorts/quick.js)
 - [Bubble sort](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/sorts/bubble.js)
