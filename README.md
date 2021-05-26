@@ -1,28 +1,13 @@
-# JavaScript DataStructures & Algorithms 101
----
-
-![Travis](https://img.shields.io/travis/zhorton34/data-structures-algorithms-101/master.svg?style=flat-square)](https://travis-ci.org/zhorton34/data-structures-algorithms-101/builds)
-[![npm downloads](https://img.shields.io/npm/dm/data-structures-algorithms-101.svg?style=flat-square)](http://badge.fury.io/js/data-structures-algorithms-101)
-[![npm license](https://img.shields.io/npm/l/data-structures-algorithms-101.svg?style=flat-square)](http://badge.fury.io/js/vuejs-form)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![dependencies](https://img.shields.io/badge/dependencies-none-brightgreen.svg?style=flat-square)](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/package.json)
-[![npm version](https://img.shields.io/npm/v/data-structures-algorithms-101.svg?style=flat-square)](http://badge.fury.io/js/data-structures-algorithms-101)
-[![HitCount](http://hits.dwyl.com/zhorton34/data-structures-algorithms-101.svg)](http://hits.dwyl.com/data-structures-algorithms-101/vuejs-form)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
 
 
 
-### Sorts
-- Bubble
-- Quick
-- Merge
-- Insertion
-- Selection
-
+##### Bubble
 ---
-
 ```js
 const { Factory } = require('./factory.js')
 const { sorts } = require('./sorts/index.js')
@@ -307,25 +292,33 @@ let Api = require('./dist/index.js')
 
 ---
 
-- [algorithms](#algorithms)
-- [search](#search)
-- [sorts](#sorts)
-- [structures](#structures)
+- [algorithms](#algorithms
+- [comparison-vs-non-comparison-sorts](#comparison-vs-non-comparison-sorts
+- [divide-and-conquer-sorts](#divide-and-conquer-sorts
+- [search](#search
+- [sorts](#sorts
+- [structures](#structures
 
-
-### Other Alogirthms
+###
+#### Other Alogirthms
 ---
 - [Dijkstra's Algorithm](https://google.com?q=dijkstrasalgorithm)
 - [Topological Sort & Shortest-path in a DAG](TODO)
 - [Bellman-Ford](TODO)
 
-### Searching Algorithms
+
+
+##### Divide And Conquer Sorts
+
+- Quick Sort
+
+####### Searching Algorithms
 ---
 - [Linear search](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/searches/linear.js)
 - [Binary search](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/searches/binary.js)
 - [Depth first search (DFS)](https://google.com?q=depthfirstsearch)
 
-### Sorting Algorithms
+####### Sorting Algorithms
 ---
 - [Merge sort](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/sorts/merge.js) 
 - [Quick sort](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/sorts/quick.js)
@@ -334,7 +327,8 @@ let Api = require('./dist/index.js')
 - [Selection sort](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/sorts/select.js)
 - [Radix sort](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/sorts/radix.js)
 
-### Data Structures
+###
+#### Data Structures
 ---
 - [Array](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/array.js)
 - [Hash Tables](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/hash-table.js)
