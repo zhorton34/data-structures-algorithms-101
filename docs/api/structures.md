@@ -1,6 +1,5 @@
-
-#### Data Structures
----
+### Data Structures
+--
 - [Array](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/array.js)
 - [Hash Tables](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/hash-table.js)
 - [Queue](https://github.com/zhorton34/data-structures-algorithms-101/blob/master/structures/queue.js)
