@@ -41,7 +41,7 @@ class Queue
   {
     let first = this.first 
 
-    this.length = this.length > 0 ? this.length-- ? this.length
+    this.length = this.length > 0 ? this.length-- : this.length
     this.first = this.first.next ? this.first.next : { value: null, next: null }
     this.last = this.isEmpty() ? this.first : this.last
 

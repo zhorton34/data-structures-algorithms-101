@@ -16,15 +16,7 @@
  |     -> Sorts the elements far apart from each other and successively reduces the interval between the elements to be sorted.
  |     -> In shell sort, elements at a specific interval are sorted.
  */
-
-const getMax = array => { // O(n)
-	let max = 0
-	for (let num of array) {
-		max = (max < num.toString().length) ? num.toString().length : max
-	}
-	return max
-}
-
+ 
 const getMax = items => { // O(n)
 	let max = 0
 	for (let num of items) {
