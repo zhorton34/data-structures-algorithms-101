@@ -15,7 +15,6 @@ module.exports = (it, expect, { api }) => {
 
 			let n = dummy.length
 			let logN = Math.log(n)
-		
 			let assert = {
 				nLogn: (n * Math.log(n)) >= operations,
 				quadratic: (n * n) >= operations
@@ -30,7 +29,6 @@ module.exports = (it, expect, { api }) => {
 
 		let nLogNTimes = (assertions.filter((item) => item === true).length) / assertions.length
 		let nLogNAssertion = nLogNTimes >= 0.90
-		console.log(nLogNTimes)
 		expect(nLogNAssertion).to.eql(true)
 	})
 };

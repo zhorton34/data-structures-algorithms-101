@@ -27,7 +27,7 @@ const QuickSort = (items = [], left = [], right = [], callback) => {
   	let [pivot, ...list] = items
     list.forEach(item => (item < pivot ? left : right).push(item))
 
-    return [...QuickSort(left), pivot, ...QuickSort(right)]
+    return [...QuickSort(left, [], [], callback), pivot, ...QuickSort(right, [], [], callback)]
 }
 
 

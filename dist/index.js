@@ -541,7 +541,7 @@ var QuickSort = function QuickSort() {
   list.forEach(function (item) {
     return (item < pivot ? left : right).push(item);
   });
-  return [].concat(_toConsumableArray(QuickSort(left)), [pivot], _toConsumableArray(QuickSort(right)));
+  return [].concat(_toConsumableArray(QuickSort(left, [], [], callback)), [pivot], _toConsumableArray(QuickSort(right, [], [], callback)));
 };
 
 module.exports = QuickSort;
