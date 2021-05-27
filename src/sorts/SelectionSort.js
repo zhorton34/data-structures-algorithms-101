@@ -18,12 +18,9 @@ const SelectionSort = (items = []) => {
     let min = passes
 
     for (let i = passes; i < items.length; i++)
-    {
-      if (items[min] > items[i]) {
+      if (items[min] > items[i]) 
         min = i
-      }
-    }
-
+      
     if (min != passes)
     {
       let temporary = items[passes]
