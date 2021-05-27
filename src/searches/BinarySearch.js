@@ -1,23 +1,15 @@
-/*----------------------------------------------------------
+/*---------------------------------------------------------------
  |   Binary Search
- *----------------------------------------------------------
+ *---------------------------------------------------------------
  |
- |   Time Complexity 
- |      . Best: O(1)
- |      . Aver: O(log n)
- |      . Worst: O(log n) 
- | 
- |   Space Complexity
- |      . O(1)
- |   Notes
- |      . Array Must be sorted for binary search to work
- |      . Binary Search is Uber Fast O(log n) is the fastest outside of Constant Time Complexity
+ |   . Time Complexity 
+ |     -> Best: O(1)
+ |     -> Average: O(log n)
  |
- */
+ */ 
 
 const BinarySearch = (sorted = [], key) => {
-	let lo = 0
-	let hi = sorted.length - 1
+	let [lo, hi] = [0, sorted.length - 1]
 
 	while (lo <= hi)
 	{
@@ -31,4 +23,4 @@ const BinarySearch = (sorted = [], key) => {
 	return - 1
 }
 
-module.exports = { BinarySearch }
+module.exports = BinarySearch

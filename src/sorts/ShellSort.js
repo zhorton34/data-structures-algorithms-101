@@ -36,4 +36,4 @@ const ShellSort = (items = [], gaps) => {
 }
 
 
-module.exports = { ShellSort }
+module.exports = ShellSort

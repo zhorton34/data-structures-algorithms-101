@@ -40,7 +40,7 @@ const MergeSort = (items = []) => {
 }
 
 
-module.exports = { MergeSort }
+module.exports = MergeSort
 
 
 

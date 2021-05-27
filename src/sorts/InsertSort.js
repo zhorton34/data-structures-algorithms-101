@@ -32,4 +32,4 @@ const InsertionSort = (items = []) => {
 }
 
 
-module.exports = { InsertionSort }
+module.exports = InsertionSort

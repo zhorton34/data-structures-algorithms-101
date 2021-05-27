@@ -44,4 +44,4 @@ const RadixSort = items => { // O(nk)
 }
 
 
-module.exports = { RadixSort }
+module.exports = RadixSort

@@ -9,19 +9,22 @@
  |
  */
 
-class LinkedListNode {
-  constructor(data, next = null) {
+class LinkedListNode 
+{
+    static make(...parameters) 
+  {
+    return new this(...parameters)
+  }
+  
+  constructor(data, next = null) 
+  {
     this.data = data;
     this.next = next;
   }
 
-  toString(callback) {
-    return callback ? callback(this.data) : `${this.data}`;
-  }
-
-  static make(...parameters) 
+  toString(callback) 
   {
-  	return new this(...parameters)
+    return callback ? callback(this.data) : `${this.data}`;
   }
 }
 
