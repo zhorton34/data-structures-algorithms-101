@@ -208,12 +208,10 @@ class Heap
   {
     const foundItemIndices = []
 
-    for (let itemIndex = 0; itemIndex < this.heapContainer.length; itemIndex += 1) {
-      if (comparator.equal(item, this.heapContainer[itemIndex])) {
+    for (let itemIndex = 0; itemIndex < this.heapContainer.length; itemIndex += 1)
+      if (comparator.equal(item, this.heapContainer[itemIndex])) 
         foundItemIndices.push(itemIndex)
-      }
-    }
-
+      
     return foundItemIndices
   }
 

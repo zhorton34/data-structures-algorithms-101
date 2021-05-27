@@ -1,70 +1,62 @@
-class Queue
+/*--------------------------------------------------------
+ |   Queue
+ *--------------------------------------------------------
+ |
+ |   . Api
+ |     -> isEmpty
+ |        @return {boolean}
+ |     -> peek (Read the element at the front of the queue without removing it)
+ |        @return {*}
+ |     -> enqueue (Add a new element to the end of the queue - the tail of the linked list)
+ |        @param {*} data
+ |     -> dequeue 
+ |        @return {*}
+ |     -> toString
+ |        @param [callback]
+ |        @return {string}
+ |
+ */
+
+const LinkedList = require('@DataStructure/LinkedList.js')
+
+class Queue 
 {
   static make(...parameters)
   {
-    return new Queue(...parameters)
+    return new this(...parameters)
   }
 
-  constructor()
+  constructor() 
   {
-    this.first = { value: null, next: null }
-    this.last = this.first
-    this.length = 0
+    this.linkedList = LinkedList.make()
   }
 
-  peek()
+  isEmpty() 
   {
-    return this.first
+    return !this.linkedList.head
   }
 
-  enqueue(value = undefined)
+  peek() 
   {
-    if (this.isEmpty()) {
-      this.first = { value, next: null }
-      this.last = this.first
-    } 
+    if (!this.linkedList.head) return null
 
-    else if (this.length === 1) {
-      this.last = { value, next: null }
-      this.first.next = this.last
-
-    }
-    else if (this.length > 1) {
-      this.last.next = { value, next: null}
-      this.last = this.last.next 
-    }
-
-    this.length++
-    return this.isNotEmpty()
+    return this.linkedList.head.data
   }
 
-  dequeue()
+  enqueue(data) 
   {
-    let first = this.first 
-
-    this.length = this.length > 0 ? this.length-- : this.length
-    this.first = this.first.next ? this.first.next : { value: null, next: null }
-    this.last = this.isEmpty() ? this.first : this.last
-
-    return this.isEmpty() || this.first !== first
+    this.linkedList.append(data)
   }
 
-  isNotEmpty()
+  dequeue() 
   {
-    return this.isEmpty() === false
-  }
-  isEmpty ()
-  {
-    return this.length === 0
+    const removedHead = this.linkedList.deleteHead()
+    return removedHead ? removedHead.data : null
   }
 
-
-  traverse()
+  toString(callback) 
   {
-    while (this.isNotEmpty()) {
-      console.log(this.peek())
-      this.dequeue()
-    }
+    return this.linkedList.toString(callback)
   }
 }
 

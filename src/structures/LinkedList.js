@@ -84,7 +84,7 @@ const Node = require('@DataStructure/LinkedListNode.js')
       this.head = node
       this.tail = node
 
-      return this;
+      return this
     }
 
     // Attach new node to the end of linked list.
@@ -138,14 +138,11 @@ const Node = require('@DataStructure/LinkedListNode.js')
 
     while (currentNode) {
       // If callback is specified then try to find node by callback.
-      if (callback && callback(currentNode.value)) {
-        return currentNode
-      }
-
+      if (callback && callback(currentNode.value)) return currentNode
+  
       // If value is specified then try to compare by value..
-      if (value !== undefined && this.compare.equal(currentNode.value, value)) {
-        return currentNode
-      }
+      if (value !== undefined && this.compare.equal(currentNode.value, value)) return currentNode
+      
 
       currentNode = currentNode.next
     }
