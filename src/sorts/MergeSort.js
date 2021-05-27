@@ -28,14 +28,16 @@ const merge = (left = [], right = [], merged = []) => {
   return merged
 }
 
-const MergeSort = (items = []) => {
+const MergeSort = (items = [], callback) => {
+  if (callback) callback()
   if (items.length <= 1) return items
 
   const middle = Math.floor(items.length/2)
+  
 
   return merge(
-    MergeSort(items.slice(0, middle)),
-    MergeSort(items.slice(middle, items.length))
+    MergeSort(items.slice(0, middle), callback),
+    MergeSort(items.slice(middle, items.length), callback)
   )
 }
 

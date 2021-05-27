@@ -19,7 +19,7 @@ const InsertionSort = (items = []) => {
       let temporary = items[i]
 
       while (index >= 0 && items[index] > temporary)
-      {
+      {          
         items[index + 1] = items[index]
 
         index--

@@ -1,4 +1,4 @@
-module.exports = {
+let api = {
 	factory: require('@Factory/factory.js'),
 	sorts: {
 		heap: require('@Sort/HeapSort.js'),
@@ -41,3 +41,7 @@ module.exports = {
 		binarySearchTree: require('@DataStructure/BinarySearchTree.js'),
 	}
 }
+
+global.api = api
+
+

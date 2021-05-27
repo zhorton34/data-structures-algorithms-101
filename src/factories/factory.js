@@ -16,4 +16,4 @@ class Factory
 }
 
 
-module.exports = { Factory }
+module.exports = Factory

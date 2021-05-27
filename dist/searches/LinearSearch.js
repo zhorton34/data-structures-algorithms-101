@@ -1,3 +1,5 @@
+"use strict";
+
 /*----------------------------------------------------------
  |   Linear Search
  *----------------------------------------------------------
@@ -15,13 +17,15 @@
  |      . Much, much, much slower than binary search on large lists of items
  |
  */
+var LinearSearch = function LinearSearch() {
+  var items = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var key = arguments.length > 1 ? arguments[1] : undefined;
 
- const LinearSearch = (items = [], key) => {
- 	for (let i = 0; i < items.length; i++)
- 		if (items[i] === key) 
- 			return i
+  for (var i = 0; i < items.length; i++) {
+    if (items[i] === key) return i;
+  }
 
- 	return -1
- }
+  return -1;
+};
 
- module.exports = LinearSearch
+module.exports = LinearSearch;

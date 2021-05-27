@@ -20,13 +20,13 @@
  */
 
 
-const QuickSort = (items = [], left = [], right = []) => {
-    if (items.length <= 1) return items
+const QuickSort = (items = [], left = [], right = [], callback) => {
+    if (callback) callback()
+    if (items.length < 2) return items
 
-    let pivot = items.pop()
-    let pushToSide = item => (item < pivot ? left : right).push(item)
+  	let [pivot, ...list] = items
+    list.forEach(item => (item < pivot ? left : right).push(item))
 
-    items.forEach(pushToSide)
     return [...QuickSort(left), pivot, ...QuickSort(right)]
 }
 

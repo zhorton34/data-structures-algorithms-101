@@ -121,4 +121,4 @@ class BinarySearchTree
 
   
 
-module.exports = { tree, BinarySearchTree }
+module.exports = BinarySearchTree
