@@ -24,4 +24,4 @@
  	return -1
  }
 
- module.exports = { LinearSearch }
+ module.exports = LinearSearch

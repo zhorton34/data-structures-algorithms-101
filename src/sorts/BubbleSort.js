@@ -31,4 +31,4 @@ const BubbleSort = (items = []) => {
 }
 
 
-module.exports = { BubbleSort }
+module.exports = BubbleSort

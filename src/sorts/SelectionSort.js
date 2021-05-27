@@ -36,4 +36,4 @@ const SelectionSort = (items = []) => {
 }
 
 
-module.exports = { SelectionSort }
+module.exports = SelectionSort

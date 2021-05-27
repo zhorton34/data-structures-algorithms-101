@@ -1,9 +1,10 @@
 class Queue
 {
-  static build()
+  static make(...parameters)
   {
-    return new Queue()
+    return new Queue(...parameters)
   }
+
   constructor()
   {
     this.first = { value: null, next: null }
@@ -67,4 +68,4 @@ class Queue
   }
 }
 
-module.exports = { Queue }
+module.exports = Queue

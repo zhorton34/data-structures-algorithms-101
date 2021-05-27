@@ -31,4 +31,4 @@ const QuickSort = (items = [], left = [], right = []) => {
 }
 
 
-module.exports = { QuickSort }
+module.exports = QuickSort

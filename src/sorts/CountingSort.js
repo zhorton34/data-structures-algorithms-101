@@ -31,4 +31,4 @@ const CountingSort = (items, min, max) => {
     return items;
 };
 
-module.exports = { CountingSort }
+module.exports = CountingSort

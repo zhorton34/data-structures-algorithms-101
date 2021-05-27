@@ -1,10 +1,13 @@
-let mix = require('laravel-mix');
 let path = require('path')
-mix.js('src/index.js', 'dist').webpackConfig({
+let mix = require('laravel-mix')
+
+mix.js('src/api.js', 'dist').webpackConfig({
 	  resolve: {
 	  	alias: {
+	  		'@API': path.resolve(__dirname, 'src/api.js'),
 				'@Sort': path.resolve(__dirname, 'src/sorts'),
 				'@Helper': path.resolve(__dirname, 'src/helpers'),
+				'@Search': path.resolve(__dirname, 'src/searches'),
 				'@Factory': path.resolve(__dirname, 'src/factories'),
 				'@DataStructure': path.resolve(__dirname, 'src/structures'),
 	  	}
