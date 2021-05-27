@@ -36,8 +36,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
  |        @param (*) value
  |        @return {LinkedListNode}
  |     -> find
- |        @param {Object} findParams
- |        @param {*} findParams.value
+ |        @param {Object} findParams 
+|        @param {*} findParams.value
  |        @param {function} [findParams.callback]
  |        @return {LinkedListNode}
  |     -> deleteTail
@@ -57,13 +57,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
  |        @returns {LinkedList}
  |        
  */
-var _require = require('./LinkedListNode.js'),
-    Node = _require.LinkedListNode;
+var Comparator = require('@Helper/Comparator.js');
 
-var _require2 = require('../helpers/Comparator.js'),
-    Comparator = _require2.Comparator;
-
-console.log(Node);
+var Node = require('@DataStructure/LinkedListNode.js');
 
 var LinkedList = /*#__PURE__*/function () {
   function LinkedList(comparatorFunction) {
@@ -144,11 +140,7 @@ var LinkedList = /*#__PURE__*/function () {
           value = _ref$value === void 0 ? undefined : _ref$value,
           _ref$callback = _ref.callback,
           callback = _ref$callback === void 0 ? undefined : _ref$callback;
-
-      if (!this.head) {
-        return null;
-      }
-
+      if (!this.head) return null;
       var currentNode = this.head;
 
       while (currentNode) {
@@ -197,19 +189,13 @@ var LinkedList = /*#__PURE__*/function () {
   }, {
     key: "deleteHead",
     value: function deleteHead() {
-      if (!this.head) {
-        return null;
-      }
-
+      if (!this.head) return null;
       var deletedHead = this.head;
-
-      if (this.head.next) {
-        this.head = this.head.next;
-      } else {
-        this.head = null;
-        this.tail = null;
+      if (this.head.next) this.head = this.head.next;else {
+        var _ref2 = [null, null];
+        this.head = _ref2[0];
+        this.tail = _ref2[1];
       }
-
       return deletedHead;
     }
   }, {
@@ -222,10 +208,6 @@ var LinkedList = /*#__PURE__*/function () {
       });
       return this;
     }
-    /**
-     * @return {LinkedListNode[]}
-     */
-
   }, {
     key: "toArray",
     value: function toArray() {
@@ -239,11 +221,6 @@ var LinkedList = /*#__PURE__*/function () {
 
       return nodes;
     }
-    /**
-     * @param {function} [callback]
-     * @return {string}
-     */
-
   }, {
     key: "toString",
     value: function toString(callback) {
@@ -251,17 +228,13 @@ var LinkedList = /*#__PURE__*/function () {
         return node.toString(callback);
       }).toString();
     }
-    /**
-     * Reverse a linked list.
-     * @returns {LinkedList}
-     */
-
   }, {
     key: "reverse",
     value: function reverse() {
-      var currNode = this.head;
-      var prevNode = null;
-      var nextNode = null;
+      var _ref3 = [this.head, null, null],
+          currNode = _ref3[0],
+          prevNode = _ref3[1],
+          nextNode = _ref3[2];
 
       while (currNode) {
         // Store next node.
@@ -292,6 +265,4 @@ var LinkedList = /*#__PURE__*/function () {
   return LinkedList;
 }();
 
-module.exports = {
-  LinkedList: LinkedList
-};
+module.exports = LinkedList;
